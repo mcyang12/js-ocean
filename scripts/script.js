@@ -1,5 +1,6 @@
 //Task 1: Implement a function that calculates total fish caught
-
+//(MY) creating a function to calculate fish caught using totalFish as the variable//
+//(MY) using a for loop we are to determine the total fish quantity//
 
 function calculateFishCaught(totalFish){
     let total = 0;
@@ -17,6 +18,8 @@ let weekdayFishCaught = [100, 60, 40, 100];
 let totalWeekendFishCaught = calculateFishCaught(weekendFishCaught);
 console.log("Total weekend fish caught:", totalWeekendFishCaught);
 
+//(MY) by console.log the total fish caught, we will be able to run the code//
+
 //Task 2: Implement a function to filter out endangered species from a list of fish options
 function filterEndangeredFish(fishOptions){
     return fishOptions.filter(option => !option.endangered)
@@ -27,6 +30,12 @@ let fishOptions = [
     {name: "Bluefin Tuna", endangered: true},
     {name: "Cod", endangered: false}
 ]
+
+//(MY) In task 2, need to filter out the endangered fish. By doing so, we need to filter out every option using a boolean method.//
+//(MY) Function the variable of the elements.//
+//(MY) Returning the iterator that is already filtered.//
+//(MY) Using the boolean method, to filter out the fishOptions if the statement is true or false.//
+
 
 //Task 3: Define a class for Research Institutes
 
@@ -39,6 +48,9 @@ class ResearchInstitute{
     }
 }
 
+//(MY) Using class and defining Research Institue.//
+//(MY) Along with the constructor method which will define and describe the objects of the class.//
+
 //Task 4: Extend the ResearchInstitute class for Marine ReasearchInstitute
 class MarineReachInstitute extends ResearchInstitute{
     constructor(instituteName, location, specialty, size, waterLocationParam, climate){
@@ -47,6 +59,11 @@ class MarineReachInstitute extends ResearchInstitute{
         this.climate = climate;
     }
 }
+
+//(MY) This is similar to defining a class, but includes the other options available.//
+//(MY) Extending the class with the secondary option.//
+//(MY) Constructor the main function and second corresponding options.//
+//(MY) Super is added for the corresponding options or subclasses.//
 
 //Task 5: Implement a class with default parameters for Oceanic Dive Gear
 
@@ -63,3 +80,6 @@ let diveGear = new OceanicDiveGear();
    // depth: "Deep Sea",
     //type: "Scuba"
 //}
+
+//(MY) Adding default values to the class param properties.//
+//(MY) Declaring the object for the argument.//
